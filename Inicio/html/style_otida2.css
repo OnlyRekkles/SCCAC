@@ -1,0 +1,186 @@
+body{
+    background-repeat: no-repeat;
+    }
+    h1{
+        color: #0e828c;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+      }
+      .regresar {
+        margin-left: 110px;
+        margin-top: 35px;
+        margin-block-end: 20px;
+        border: 3px solid #7AA0DE; /*anchura, estilo y color borde*/
+        padding: 5px; /*espacio alrededor texto*/
+        background-color: #2e518b; /*color botón*/
+        color: #ffffff; /*color texto*/
+        text-decoration: none; /*decoración texto*/
+        text-transform: uppercase; /*capitalización texto*/
+        font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+        border-radius: 30px; /*bordes redondos*/
+        }
+      
+        input{
+            border-spacing: 10px;
+            margin-block-end: 1px;
+            border: 2px solid rgba(14, 130, 140);
+            font-family: Tahoma;
+            font-size: 14px;
+            width: 225px; 
+            height: 120px;
+        }
+        .proceso{
+          border-spacing: 500px;
+          margin-block-end: 10px;
+          border: 2px solid rgba(14, 130, 140);
+          font-family: Tahoma;
+          font-size: 14px;
+          width: 225px; 
+          height: 120px;
+      }
+    
+        .numeral::before {
+          counter-increment: section;                   /* Increment the value of section counter by 1 */
+          content: counter(section) " ";    /* Display the word 'Section ', the value of 
+                                                           section counter, and a colon before the content
+                                                           of each h3 */
+        }
+    
+        .informe{
+          border: 1px solid rgba(14, 130, 140);
+          width: 225px; 
+          height: 120px;
+          resize: none;
+          font-family: Tahoma;
+          font-style: bold;
+          font-size: 14px;
+        
+        }
+        
+        textarea{
+          border: 1px solid rgba(14, 130, 140);
+          resize: none;
+          font-family: Tahoma;
+          font-style: bold;
+          font-size: 20px;
+          width:205px; 
+          height: 120px;
+          display: incline-block;
+          position: absolute;
+          top: 500px;
+          left: 10px;
+          border-top-width: 4px;
+          border-left-width: 4px;
+          border-right-width: 4px;
+          border-bottom-width: 4px;
+        
+        }
+    
+      table {
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 10px;
+    }
+    th{
+        display: table-cell;
+        vertical-align: inherit;
+        width: 10%;
+          height: 20px;
+        font-style: bold;
+        font-family: Verdana;
+    }
+    td {
+      margin-block-end: 20px;
+      font-size: 14px;
+      font-style: normal;
+      font: 1em Tahoma;
+    
+    }
+    
+    .actividad{
+      border: 1px solid rgba(14, 130, 140);
+      width: 210px; 
+      height: 20px;
+      resize: none;
+      font-family: Tahoma;
+      font-style: bold;
+      font-size: 14px;
+    
+    }
+    .informe{
+        border: 1px solid rgba(14, 130, 140);
+        width: 100px; 
+        height: 20px;
+        resize: none;
+        font-family: Tahoma;
+        font-style: bold;
+        font-size: 14px;
+      
+    }
+    
+    table.default th {
+        padding: 0.2em 0.8em;
+        border: 1px solid rgba(14, 130, 140);
+        background: rgba(90,156,255,.25);
+        text-align: left;
+        font-family: 'Helvetica';/*tipografía texto*/
+    
+    }
+    
+    
+    .rectangulo{
+      background: #428bca;
+      width: 350px; 
+      height: 80px; 
+    }
+    .semicirculo{
+      width: 50px; 
+      height: 100px; 
+      border: 2px solid #555; 
+      background: #5cb85c;
+      -moz-border-radius: 0 100px 100px 0;
+      -webkit-border-radius: 0 100px 100px 0;
+      border-radius: 0 100px 100px 0;
+    }
+    .triangulo{
+      width: 0;
+      height: 0;
+      border-right: 50px;
+      border-left: 50px;
+      border-bottom: 100px solid transparent;
+    }
+    /* Centra el input personalizado con el texto */
+    .custom-radio-checkbox {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      font-family: arial;
+    }
+    
+    /* Modificador para dar la imagen de radio */
+    .custom-radio-checkbox__show--radio {
+      background-image: url(radio-uncheck.png);
+    }
+    
+    /* Oculta input original */
+    .custom-radio-checkbox > .custom-radio-checkbox__input {
+      display: none;
+    }
+    
+    /* Radio personalizado usando <span> */
+    .custom-radio-checkbox > .custom-radio-checkbox__show {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: .5rem;
+      background-size: cover;
+    }
+    
+    /* Cambia el radio personalizado cuando es pulsado */
+    .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
+      background-image: url(radio-check.png);
+    }
+    
+    

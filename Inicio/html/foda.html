@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    table, tr {
+        border: 2px solid rgb(75, 192, 163);
+        border-collapse: collapse;
+        text-align: center;
+        padding: 3px;
+    }
+    table{
+        width: 100%;
+        background-color: #0e828c;
+    }
+    td{
+        background-color: azure;
+        text-emphasis-color: black;
+
+    }
+    textarea{
+      border: 2px solid rgba(14, 130, 140);
+      resize: none;
+      font-family: Tahoma;
+      font-style: bold;
+      font-size: 14px;
+      width: 225px;
+      height: 120px;
+  }
+    input {
+        border-spacing: 10px;
+            margin-block-end: 1px;
+            border: 2px solid rgba(14, 130, 140);
+            font-family: Tahoma;
+            font-size: 14px;
+            width: 250px; 
+            height: 120px;
+    }
+</style>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Foda</title>
+  <link rel="icon" type="image/png" href="../../IMAGES/icons/icono.png"/>
+  <link rel="stylesheet" href="style_foda.css">
+  
+   </head>
+
+   <body>
+<h1 class="h3" align="center">ANÁLISIS FODA</h1>
+<div class="container-fluid d-flex flex-row-reverse bd-highlight my-1 px-3">
+    <form> <input class="regresar" type = "button" value = "¡Regresar!" onclick = "history.back ()"
+        style="width: 125px;
+        height: 54px;"
+        > </form>
+  </div>
+
+<body background="../../IMAGES/img/fondodiagrama.png" background-position: right center; >
+
+</body>
+<table id="tabla">
+
+        <tr>
+            <td rowspan="1">Fortalezas </td>
+            <td rowspan="1">Oportunidades</td>
+        </tr>
+        <tr>
+            <td><center><input id='proceso' placeholder="" required size="30"></td>
+            <td><center><input id='proceso' placeholder="" required size="30"></td>
+
+            </tr>
+
+            <tr>
+            <td rowspan="1">Debilidades</td>
+            <td rowspan="1">Amenazas</td>
+    
+        </tr>
+        
+        <tr>
+        <td><center><input id='proceso' placeholder="" required size="30"></td>
+        <td><center><input id='proceso' placeholder="" required size="30"></td>
+
+        </tr>
+
+        
+</table>
+
+<div class="container-fluid d-flex flex-row-reverse bd-highlight my-1 px-3">
+    <form> <input class="Agregar" type = "button" value = "Guardar" onclick = "add()"
+        style="width: 116px;
+        height: 36px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        margin-block: 30px;"
+        > </form>
+  </div>
+
+
+</body>
+</html>
