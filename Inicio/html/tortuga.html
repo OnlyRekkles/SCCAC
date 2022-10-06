@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mapeo Tortuga</title>
+  <link rel="icon" type="image/png" href="../../IMAGES/icons/icono.png"/>
+  <link rel="stylesheet" href="style_tortuga.css">
+   </head>
+
+<h1 class="h3" align="center">DIAGRAMA DE TORTUGA</h1>
+<div class="container-fluid d-flex flex-row-reverse bd-highlight my-1 px-3">
+  <form> <input type = "button" value = "¡Regresar!" onclick = "history.back ()"> </form>
+</div>
+  <body background="../../IMAGES/img/fondodiagrama.png" background-position: right center; >
+  <div class="grid">
+    <div class="conque"><center>¿CON QUE?</center>
+      <textarea placeholder="Maquinas/equipos.
+      Materiales:" id="msg" name="conque"></textarea>
+    </div>
+    <div class="entradas"><center>ENTRADAS</center>
+      <textarea placeholder="Necesidades del cliente.
+Requerimientos de Entrada: Cuales son las entradas que determinan que el proceso debe iniciar.
+Fuentes de entrada: procesos procedentes: proveedores (internos, externos), clientes, otras partes interesadas pertinentes." id="msg" name="entradas"></textarea>
+    </div>
+    <div class="criterios"><center>MEDICIÓN</center>
+      <textarea placeholder="¿Con que criterios clave? Mediciones/evaluaciones
+Datos tomados en cuenta:
+Frecuencia de medición:
+Registro:
+Responsable de medición: " id="msg" name="criterios"></textarea>
+    </div>
+     <div class="proceso"><center>PROCESO</center>
+       <textarea class="ph-center" placeholder="Proceso:
+ Objetivo del proceso: " name="criterios" style="border-radius: 128px; width:350px; height:258px; justify-content:center;"></textarea>
+     </div>
+    <div class="conquien"><center>¿CON QUIEN?</center>
+      <textarea placeholder="Personal relacionado con el proceso:
+Ligas/interfaces con las partes involucradas. " id="msg" name="conquien"></textarea>
+    </div>
+    <div class="salidas"><center>SALIDAS</center>
+      <textarea placeholder="Necesidades del cliente:
+Requerimientos de Salida: que criterios de salida son usados para determinar que las salidas cumplen los requerimientos de entrada. " id="msg" name="salidas"></textarea>
+    </div>
+    <div class="como"><center>¿COMO?</center>
+    <textarea placeholder="Proceso de soporte (Quién ayuda y como)
+Procedimientos/ Instrucciones de trabajo/ Control de Doc's. " id="msg" name="como"></textarea>
+  </div>
+  </div>
+</body>

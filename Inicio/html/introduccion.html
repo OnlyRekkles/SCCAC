@@ -1,0 +1,207 @@
+<h1 align="center">INTRODUCCIÓN</h1>
+    <div class="continer-silder"> 
+        <div class="slider" id="slider">
+            <div class="slider-section">
+            <img src="../IMAGES/img/banuno.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+          <img src="../IMAGES/img/bandos.png" alt="" class="slider-img" >
+         </div>
+          <div class="slider-section">
+          <img src="../IMAGES/img/bantres.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+            <img src="../IMAGES/img/bancuatro.png" alt="" class="slider-img" > 
+          </div>
+          <div class="slider-section">
+            <img src="../IMAGES/img/bancinco.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+           <img src="../IMAGES/img/banseis.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+           <img src="../IMAGES/img/bansiete.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+           <img src="../IMAGES/img/banocho.png" alt="" class="slider-img" >
+          </div>
+          <div class="slider-section">
+           <img src="../IMAGES/img/bannueve.png" alt="" class="slider-img" >
+          </div>
+        </div>
+
+            <div class="slider-btn slider-btn-I" id="btn-I"> <ion-icon name="caret-back-outline"></ion-icon></div>
+            <div class="slider-btn slider-btn-D" id="btn-D"><ion-icon name="caret-forward-outline"></ion-icon></div>
+          </div>
+      
+
+    <script>
+
+      const slider = document.querySelector("#slider");
+      let sliderSection = document.querySelectorAll(".slider-section");
+      let sliderSectionLast = sliderSection[sliderSection.length -1];
+      
+      const btnI = document.querySelector("#btn-I");
+      const btnD = document.querySelector("#btn-D");
+      
+      
+      
+      slider.insertAdjacentElement('afterBegin', sliderSectionLast);
+      
+      function Next(){
+      
+          let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
+          slider.style.marginLeft = "-200%";
+          slider.style.transition = "all 0.5s";
+      
+          setTimeout(function(){
+              slider.style.transition= "none";
+              slider.insertAdjacentElement('beforeEnd', sliderSectionFirst);
+              slider.style.marginLeft = "-100%";
+      
+      
+      
+          }, 500);
+      
+      
+      }
+      function Prev(){
+      
+          let sliderSection = document.querySelectorAll(".slider-section");
+          let sliderSectionLast = sliderSection[sliderSection.length -1];
+          slider.style.marginLeft = "0";
+          slider.style.transition = "all 0.5s";
+      
+          setTimeout(function(){
+              slider.style.transition= "none";
+              slider.insertAdjacentElement('afterBegin', sliderSectionLast);
+              slider.style.marginLeft = "-100%";
+      
+      
+      
+          }, 500);
+      
+      
+      }
+      
+      
+      btnD.addEventListener('click', function(){
+      Next();
+      
+      
+      })
+      btnI.addEventListener('click', function(){
+      Prev();
+      
+      
+      })
+      
+      
+      // Slide automatico
+      setInterval(function(){
+      
+          Next();
+      
+      },5000);
+      </script>
+    
+<style>
+h1{
+    color: #0e828c;
+    font-family: OpenSans, bold;
+    font-size: 60px;
+    margin: 10px;
+    margin-top: 20px;
+  }
+  *{
+
+box-sizing: border-box;
+}
+
+body{
+
+  display: flex;
+  min-height: 100vh;
+  margin: 10vh 20vh;
+
+}
+
+
+.continer-silder{
+
+width: 200%;
+max-width: 900px;
+margin: auto;
+overflow: hidden;  
+box-shadow: 0 0 0 10px rgb(221, 215, 215),
+            0 15px 50px;
+position: relative;
+
+
+}
+.slider{
+
+display: flex;
+width: 900%;
+height: 28rem;
+margin-left: -100%;
+
+}
+
+.slider-section{
+
+width: 100%;
+
+
+}
+
+.slider-img{
+
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+
+}
+
+.slider-btn{
+
+position: absolute;
+width: 40px;
+height: 40px;
+background: rgb(225, 255, 255, 0.7);
+top: 50%;
+transform: translateY(-50%);
+font-size: 25px;
+font-weight: bold;
+font-family: monospace;
+text-align: center;
+border-radius: 50% ;
+cursor: pointer;
+
+}
+
+
+.slider-btn:hover{
+
+color: #fff;
+
+}
+
+
+
+
+.slider-btn-I{
+left: 10px;
+
+
+
+}
+.slider-btn-D{
+right: 10px;
+
+
+}
+</style>
+

@@ -1,0 +1,141 @@
+body{
+  background-repeat: no-repeat;
+  }
+input {
+margin-left: 70px;
+margin-top: 35px;
+margin-block-end: 10px;
+border: 2px solid #7AA0DE; /*anchura, estilo y color borde*/
+padding: 10px; /*espacio alrededor texto*/
+background-color: #2e518b; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+border-radius: 50px; /*bordes redondos*/
+}
+h1{
+  color: #0e828c;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin: 10px;
+}
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+  /* Tamaño uniforme del campo de texto */
+  width: 450px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 2px solid #0e828c;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #05b1e2;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 10em;
+}
+
+.ph-center {
+  height: 100px;
+}
+.ph-center::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 100px;/* Centrado vertical */
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3em;
+  grid-auto-rows: minmax(145px,auto);
+  align-items: stretch;
+
+}
+
+.conque{
+  border-radius: 10px;
+  resize: none;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: groove;
+  border-color: SteelBlue;
+}
+.entradas{  
+  border-radius: 10px;
+  resize: none;
+  grid-row: 3/2;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: groove;
+  border-color: SteelBlue;
+}
+
+.criterios{
+  border-radius: 10px;
+  resize: none;
+  grid-row: 3/4;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: groove;
+  border-color: SteelBlue;
+}
+.proceso{
+  width: 350px; height: 300px;border-radius: 50%;
+  position: absolute; margin: auto; left: 0; right: 0; top: 50px; bottom: 0;
+  resize: none;
+  grid-column:2/3;
+  grid-row: 2/3;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: solid;
+  border-color: SteelBlue;
+}
+
+
+.conquien{
+  border-radius: 10px;
+  resize: none;
+  grid-column:3/4;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: groove;
+  border-color: SteelBlue;
+}
+
+.salidas{
+    border-radius: 10px;
+    resize: none;
+    grid-column:4/3;
+    font-family: Tahoma;
+    font-style: bold;
+    font-size: 12px;
+    border-style: groove;
+    border-color: SteelBlue;
+}
+
+.como{
+  border-radius: 10px;
+  resize: none;
+  grid-column:3/4;
+  font-family: Tahoma;
+  font-style: bold;
+  font-size: 12px;
+  border-style: groove;
+  border-color: SteelBlue;
+}
